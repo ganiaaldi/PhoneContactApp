@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ma = this; dbcenter = new DataHelper(this);
         RefreshList(); }
+
     public void RefreshList()
     {
         SQLiteDatabase db = dbcenter.getReadableDatabase();

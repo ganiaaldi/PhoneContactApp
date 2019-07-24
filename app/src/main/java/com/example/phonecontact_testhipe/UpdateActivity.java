@@ -39,6 +39,7 @@ public class UpdateActivity extends AppCompatActivity implements
             idContact = Integer.parseInt(cursor.getString(0).toString());
             textName.setText(cursor.getString(1).toString());
             textPhone.setText(cursor.getString(2).toString());
+            textEmail.setText(cursor.getString(3).toString());
         }
         tonSave = (Button) findViewById(R.id.button_main);
         tonSave.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +52,7 @@ public class UpdateActivity extends AppCompatActivity implements
                     db.execSQL("update contact set name='" +
                             textName.getText().toString() +"', phone='" +
                             textPhone.getText().toString()+"', email='"+
-                            textEmail +"' where id_contact='" +
+                            textEmail.getText().toString() +"' where id_contact='" +
                             idContact+"'");
                     Toast.makeText(getApplicationContext(), "Success",
                             Toast.LENGTH_LONG).show();
