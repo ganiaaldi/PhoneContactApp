@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">PhoneContact_TestHipe</string>
+    <string name="app_name">PhoneContact_TestHipe_GaniaAldi</string>
+    <string name="list">List</string>
+    <string name="add">Add</string>
 </resources>
